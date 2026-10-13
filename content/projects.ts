@@ -38,13 +38,13 @@ export type Project = {
 // Then add public/media/photos/my-new-project.jpg. That is all. (See HOW-TO-ADD-WORK.md.)
 export const projects: Project[] = [
   { slug: "players-lounge", title: "The Player's Lounge", category: "Photography", year: "2026", ratio: "4/5", color: "#2a2f3a",
-    cover: "/media/photos/DSC00216.jpeg",
+    cover: "/media/optimized/DSC00216.jpg",
     alt: "Three friends seated beneath The Player's Lounge sign.",
     summary: "A portrait-led study of The Player's Lounge, bringing together the people, signage and atmosphere of a shared space.",
     note: "The oversized sign frames a relaxed group portrait, balancing the venue's bold identity with the people who bring the space to life.",
     role: "Photography and image editing",
     gallery: [
-      { src: "/media/photos/blanco-performance.jpeg", caption: "An establishing view of The Player's Lounge sign.", kind: "alt" },
+     { src: "/media/optimized/blanco-performance.jpg", caption: "An establishing view of The Player's Lounge sign.", kind: "alt" },
     ],
   },
   { slug: "social-media-vlog", title: "Social Media Vlog", category: "Social Media", year: "2026", ratio: "16/9", color: "#2a2f3a",
@@ -98,14 +98,14 @@ export const projects: Project[] = [
     summary: "An event photo story capturing the performance, crowd, and atmosphere at Versus.",
     gallery: [
       { src: "/media/photos/blanco-performance-bw.jpeg", caption: "A monochrome frame from Blanco's performance.", kind: "alt", ratio: "3/4" },
-      { src: "/media/photos/versus-crowd.jpeg", caption: "The crowd gathered for the event.", kind: "bts", ratio: "3/4" },
-      { src: "/media/photos/versus-dj.jpeg", caption: "The DJ keeping the event moving.", kind: "still", ratio: "3/4" },
+      { src: "/media/optimized/versus-crowd.jpg", caption: "The crowd gathered for the event.", kind: "bts", ratio: "3/4" },
+      { src: "/media/optimized/versus-dj.jpg", caption: "The DJ keeping the event moving.", kind: "still", ratio: "3/4" },
     ] },
   { slug: "fitness-in-motion", title: "Fitness in Motion", category: "Photography", year: "2026", ratio: "3/4", color: "#2a2f3a",
-    cover: "/media/photos/fitness-session.jpeg",
+    cover: "/media/optimized/fitness-session.jpg",
     alt: "A fitness training session in progress.",
     summary: "A photography series capturing strength, movement, and recovery.",
     gallery: [
-      { src: "/media/photos/fitness-stretching.jpeg", caption: "A stretching moment after the session.", kind: "alt", ratio: "3/4" },
+      { src: "/media/optimized/fitness-stretching.jpg", caption: "A stretching moment after the session.", kind: "alt", ratio: "3/4" },
     ] },
 ];
