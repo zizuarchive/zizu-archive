@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+.DS_Store
+.env*
+!.env.example
+public/media/social/PARADOL — EKENO.mp4
+public/media/social/lifestyle-film.mp4
+public/media/social/lunatico bts.mp4
+public/media/social/lems-lover-boy-syndrome-v2.mp4
+public/media/social/lems-lover-boy-syndrome.mov
