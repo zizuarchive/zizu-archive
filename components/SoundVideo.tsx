@@ -1,12 +1,10 @@
 "use client";
-import Image from "next/image";
 import { useRef, useState } from "react";
 import ManagedVideo from "./ManagedVideo";
 
 export default function SoundVideo({ src, poster, alt, focus }: { src: string; poster?: string; alt: string; focus?: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [muted, setMuted] = useState(true);
-  const [videoPlaying, setVideoPlaying] = useState(false);
   const toggleSound = () => {
     const video = containerRef.current?.querySelector("video");
     if (!video) return;
@@ -35,8 +33,7 @@ export default function SoundVideo({ src, poster, alt, focus }: { src: string; p
 
   return (
     <div ref={containerRef} className="sound-video">
-      {poster && <Image src={poster} alt="" aria-hidden fill unoptimized sizes="(max-width:800px) 100vw, 50vw" style={{ objectFit: "cover", objectPosition: focus }} />}
-      <ManagedVideo src={src} poster={poster} autoPlay muted={muted} loop playsInline aria-label={alt} onClick={togglePlayback} onPlaying={() => setVideoPlaying(true)} onVolumeChange={(event) => setMuted(event.currentTarget.muted)} style={{ objectPosition: focus, opacity: videoPlaying ? 1 : 0 }} />
+      <ManagedVideo src={src} poster={poster} autoPlay muted={muted} loop playsInline aria-label={alt} onClick={togglePlayback} onVolumeChange={(event) => setMuted(event.currentTarget.muted)} style={{ objectPosition: focus, opacity: 1 }} />
       <button className="video-sound-toggle" type="button" onClick={(event) => { event.stopPropagation(); toggleSound(); }} aria-label={muted ? "Enable sound" : "Mute sound"} aria-pressed={!muted}>
         {muted ? "Enable sound" : "Mute sound"}
       </button>
